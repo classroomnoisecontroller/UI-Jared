@@ -1,0 +1,27 @@
+{
+  "name": "ui-jared",
+  "version": "1.0.0",
+  "description": "Webpage for React app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass -o main.css scss",
+    "watch-css": "nodemon -e sass -x \"npm run build-css\"",
+    "scss": "node-sass --watch scss -o css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/classroomnoisecontroller/UI-Jared.git"
+  },
+  "author": "jaywomack",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/classroomnoisecontroller/UI-Jared/issues"
+  },
+  "homepage": "https://github.com/classroomnoisecontroller/UI-Jared#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "node-sass": "^4.12.0",
+    "nodemon": "^1.19.1"
+  }
+}
