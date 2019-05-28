@@ -63,12 +63,17 @@ nav {
 
 footer {
   display: flex;
-  height: 100px;
+  height: 150px;
+  flex-wrap: wrap;
+  align-items: center;
   background-color: rgba(0, 0, 0, 0.924); }
-
-@media (max-width: 599px) {
-  body {
-    background-color: pink; } }
+  @media (max-width: 599px) {
+    footer {
+      flex-direction: column;
+      height: 300px; } }
+  footer i {
+    color: white;
+    flex: 1; }
 
 body img {
   width: 300px;

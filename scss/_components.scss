@@ -29,6 +29,18 @@ nav {
 footer{
     display:flex;
     height: 150px;
+    flex-wrap: wrap;
+    align-items: center;
     background-color: rgba(0, 0, 0, 0.924);
+
+    @include phone {
+        flex-direction: column;
+        height: 300px;
+    }
+
+    i{
+        color: white;
+        flex: 1;
+    }
 
 }
