@@ -1,7 +1,67 @@
 //Layout: contains all the CSS that handles the layout, such as the container and any grid systems.
 
 body {
-    
+    header {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        min-height: 400px;
+        background: url('..//images/header-img.jpeg') grey;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        align-items: center;
+        justify-content: center;
+
+
+
+        h3 {
+            color: white;
+            font-size: 4.5rem;
+            font-weight: 700;
+            flex-shrink: 1;
+            text-shadow: 3px 3px 0px #000;
+
+
+
+
+        }
+
+        p {
+            color: white;
+            font-size: 2rem;
+            font-weight: 700;
+            flex-shrink: 1;
+            text-shadow: 3px 3px 0px #000;
+            margin-bottom: 50px;
+
+
+            @include phone {
+                font-size: 1.5rem;
+            }
+
+
+        }
+
+        button {
+            color: #fff;
+            text-transform: uppercase;
+            background:#F01716;
+            padding: 20px;
+            border-radius: 5px;
+            display: inline-block;
+            border: none;
+
+            &:hover {
+                background: #434343;
+                letter-spacing: 1px;
+                -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+                -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+                box-shadow: 5px 40px -10px rgba(0, 0, 0, 0.57);
+                transition: all 0.4s ease 0s;
+            }
+        }
+
+    }
 
     img {
         width: 300px;
