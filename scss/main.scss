@@ -1,5 +1,4 @@
-$badass: #bada55;
-body { 
-  margin: 0; 
-  background-color: blue; 
-}
+//Main: it should ONLY contain the imports for the above files.
+@import 'base';
+@import 'components';
+@import 'layout';
