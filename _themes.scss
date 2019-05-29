@@ -1,0 +1,34 @@
+//themes page styling
+.themes-main {
+font-family: Georgia, 'Times New Roman', Times, serif;
+    ul {
+        display: flex;
+        flex-direction: column;
+        @include phone {
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .media-h3 {
+            margin:75px auto;
+        }
+
+        li {
+            display: flex;
+        
+            @include phone {
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+            }
+            
+
+            
+        }
+    }
+
+
+
+}

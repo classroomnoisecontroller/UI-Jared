@@ -199,6 +199,16 @@ body {
       body main .card-container .card .card-img-top {
         width: 285px;
         height: 190px; }
+      body main .card-container .card a {
+        background-color: #49c5b6;
+        border: none; }
+        body main .card-container .card a:hover {
+          background: #434343;
+          letter-spacing: 1px;
+          -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+          -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+          box-shadow: 5px 40px -10px rgba(0, 0, 0, 0.57);
+          transition: all 0.4s ease 0s; }
   body main .media-object-container .media-object {
     display: flex;
     align-items: flex-start;
@@ -230,7 +240,31 @@ body {
         margin-bottom: 30px; }
       body main .media-object-container .media-object div p {
         font-size: 1.5rem;
-        text-align: left;
+        text-align: justify;
         margin-left: 10px; }
-  body main .contact {
+  body main button .contact {
     font-size: 4rem; }
+    body main button .contact a {
+      color: black;
+      text-decoration: none; }
+
+.themes-main {
+  font-family: Georgia, 'Times New Roman', Times, serif; }
+  .themes-main ul {
+    display: flex;
+    flex-direction: column; }
+    @media (max-width: 599px) {
+      .themes-main ul {
+        justify-content: center;
+        align-items: center;
+        text-align: center; } }
+    .themes-main ul .media-h3 {
+      margin: 75px auto; }
+    .themes-main ul li {
+      display: flex; }
+      @media (max-width: 599px) {
+        .themes-main ul li {
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          text-align: center; } }
