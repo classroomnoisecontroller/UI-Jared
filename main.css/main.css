@@ -76,98 +76,110 @@ footer {
     color: white;
     flex: 1; }
 
-body header {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  min-height: 400px;
-  background: url("..//images/header-img.jpeg") grey;
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  align-items: center;
-  justify-content: center; }
-  body header h3 {
-    color: white;
-    font-size: 4.5rem;
-    font-weight: 700;
-    flex-shrink: 1;
-    text-shadow: 3px 3px 0px #000; }
-  body header p {
-    color: white;
-    font-size: 2rem;
-    font-weight: 700;
-    flex-shrink: 1;
-    text-shadow: 3px 3px 0px #000;
-    margin-bottom: 50px; }
-    @media (max-width: 599px) {
-      body header p {
-        font-size: 1.5rem; } }
-  body header button {
-    color: #fff;
-    text-transform: uppercase;
-    background: #F01716;
-    padding: 20px;
-    border-radius: 5px;
-    display: inline-block;
-    border: none; }
-    body header button:hover {
-      background: #434343;
-      letter-spacing: 1px;
-      -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
-      -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
-      box-shadow: 5px 40px -10px rgba(0, 0, 0, 0.57);
-      transition: all 0.4s ease 0s; }
-
-body main h3 {
-  font-size: 3rem;
-  margin: 115px auto;
-  text-align: center; }
-
-body main .card-container {
-  display: flex;
-  justify-content: space-evenly; }
-  @media (max-width: 599px) {
-    body main .card-container {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-content: center;
-      text-align: center;
-      margin: 0; } }
-  body main .card-container .card {
-    margin: 0px 5px 50px 5px; }
-    body main .card-container .card .card-img-top {
-      width: 285px;
-      height: 190px; }
-
-body main .media-object-container .media-object {
-  display: flex;
-  align-items: flex-start;
-  margin-bottom: 150px; }
-  @media (min-width: 600px) {
-    body main .media-object-container .media-object {
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      flex-wrap: wrap; } }
-  @media (max-width: 599px) {
-    body main .media-object-container .media-object {
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      flex-wrap: wrap; } }
-  body main .media-object-container .media-object img {
-    width: 400px;
-    height: 300px; }
-    @media (max-width: 599px) {
-      body main .media-object-container .media-object img {
-        margin: 0px 0px 15px 50px; } }
-  body main .media-object-container .media-object div {
-    height: 100%;
+body {
+  font-family: Georgia, 'Times New Roman', Times, serif; }
+  body header {
+    display: flex;
+    flex-direction: column;
     width: 100%;
+    min-height: 400px;
+    background: url("..//images/header-img.jpeg") grey;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    align-items: center;
+    justify-content: center; }
+    body header h3 {
+      color: white;
+      font-size: 4.5rem;
+      font-weight: 700;
+      flex-shrink: 1;
+      text-shadow: 3px 3px 0px #000; }
+    body header p {
+      color: white;
+      font-size: 2rem;
+      font-weight: 700;
+      flex-shrink: 1;
+      text-shadow: 3px 3px 0px #000;
+      margin-bottom: 50px; }
+      @media (max-width: 599px) {
+        body header p {
+          font-size: 1.5rem; } }
+    body header button {
+      color: #fff;
+      text-transform: uppercase;
+      background: #dc3545;
+      padding: 20px;
+      border-radius: 5px;
+      display: inline-block;
+      border: none; }
+      body header button:hover {
+        background: #434343;
+        letter-spacing: 1px;
+        -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+        -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+        box-shadow: 5px 40px -10px rgba(0, 0, 0, 0.57);
+        transition: all 0.4s ease 0s; }
+  body main h3 {
+    font-size: 3rem;
+    margin: 115px auto;
     text-align: center; }
-    body main .media-object-container .media-object div h2 {
-      font-size: 3rem;
-      margin-bottom: 30px; }
-    body main .media-object-container .media-object div p {
-      font-size: 1.5rem; }
+  body main .card-container {
+    display: flex;
+    justify-content: space-evenly;
+    margin-right: 0; }
+    @media (max-width: 599px) {
+      body main .card-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        text-align: center;
+        margin: 0; } }
+    @media (max-width: 900px) {
+      body main .card-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        text-align: center;
+        margin: 0; } }
+    body main .card-container .card {
+      margin: 0px 5px 50px 5px; }
+      body main .card-container .card .card-img-top {
+        width: 285px;
+        height: 190px; }
+  body main .media-object-container .media-object {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 150px; }
+    @media (max-width: 900px) {
+      body main .media-object-container .media-object {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap; } }
+    @media (max-width: 599px) {
+      body main .media-object-container .media-object {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap; } }
+    body main .media-object-container .media-object img {
+      width: 400px;
+      height: 300px; }
+      @media (max-width: 599px) {
+        body main .media-object-container .media-object img {
+          margin: 0px 0px 15px 50px; } }
+    body main .media-object-container .media-object div {
+      height: 100%;
+      width: 100%;
+      text-align: center; }
+      body main .media-object-container .media-object div h2 {
+        font-size: 3rem;
+        margin-bottom: 30px; }
+      body main .media-object-container .media-object div p {
+        font-size: 1.5rem;
+        text-align: left;
+        margin-left: 10px; }
+  body main .contact {
+    font-size: 4rem; }

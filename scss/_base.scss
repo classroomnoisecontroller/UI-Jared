@@ -53,10 +53,10 @@ table {
     @media (max-width: 599px) { @content; }
   }
   @mixin tablet-portrait {
-    @media (min-width: 600px) { @content; }
+    @media (max-width: 900px) { @content; }
   }
   @mixin tablet-landscape {
-    @media (min-width: 900px) { @content; }
+    @media (max-width: 1200px) { @content; }
   }
   @mixin desktop {
     @media (min-width: 1200px) { @content; }
