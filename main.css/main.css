@@ -118,6 +118,45 @@ body header {
       box-shadow: 5px 40px -10px rgba(0, 0, 0, 0.57);
       transition: all 0.4s ease 0s; }
 
-body img {
-  width: 300px;
-  height: 300px; }
+body main h3 {
+  font-size: 3rem;
+  margin: 115px auto;
+  text-align: center; }
+
+@media (min-width: 600px) {
+  body main .card-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    margin: 0; } }
+
+body main .card-container .card {
+  margin: 0px 5px 50px 5px; }
+  body main .card-container .card .card-img-top {
+    width: 285px;
+    height: 190px; }
+
+body main .media-object {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 150px; }
+  @media (max-width: 599px) {
+    body main .media-object {
+      flex-direction: column; } }
+  body main .media-object img {
+    width: 400px;
+    height: 300px; }
+    @media (max-width: 599px) {
+      body main .media-object img {
+        margin: 0px 0px 15px 50px; } }
+  body main .media-object div {
+    height: 100%;
+    width: 100%;
+    text-align: center; }
+    body main .media-object div h2 {
+      font-size: 3rem;
+      margin-bottom: 30px; }
+    body main .media-object div p {
+      font-size: 1.5rem; }

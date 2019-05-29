@@ -1,6 +1,8 @@
 //Layout: contains all the CSS that handles the layout, such as the container and any grid systems.
 
 body {
+
+    
     header {
         display: flex;
         flex-direction: column;
@@ -45,7 +47,7 @@ body {
         button {
             color: #fff;
             text-transform: uppercase;
-            background:#F01716;
+            background: #F01716;
             padding: 20px;
             border-radius: 5px;
             display: inline-block;
@@ -63,8 +65,76 @@ body {
 
     }
 
-    img {
-        width: 300px;
-        height: 300px;
+
+
+    main {
+        h3 {
+            font-size: 3rem;
+            margin: 115px auto;
+            text-align: center;
+        }
+
+        .card-container {
+            @include phone {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-content: center;
+                text-align: center;
+                margin: 0;
+            }
+
+            .card {
+                margin: 0px 5px 50px 5px;
+                
+
+                .card-img-top {
+                    width: 285px;
+                    height: 190px;
+                }
+            }
+
+
+        }
+
+        .media-object {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 150px;
+
+            @include phone {
+                flex-direction: column;
+            }
+
+            img {
+                width: 400px;
+                height: 300px;
+
+                @include phone {
+                    margin: 0px 0px 15px 50px;
+                }
+
+            }
+
+            div {
+                height: 100%;
+                width: 100%;
+                text-align: center;
+
+                h2 {
+                    font-size: 3rem;
+                    margin-bottom: 30px;
+
+                }
+
+                p {
+                    font-size: 1.5rem;
+                }
+            }
+
+        }
+
+
     }
+
 }
