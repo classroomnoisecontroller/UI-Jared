@@ -75,6 +75,8 @@ body {
         }
 
         .card-container {
+            display: flex;
+            justify-content: space-evenly;
             @include phone {
                 display: flex;
                 flex-direction: column;
@@ -96,14 +98,28 @@ body {
 
 
         }
-
+        .media-object-container{
+            @include tablet-portrait {
+                // display: flex;
+                // flex-direction: column;
+            }
         .media-object {
             display: flex;
             align-items: flex-start;
             margin-bottom: 150px;
 
+            @include tablet-portrait  {
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+
             @include phone {
                 flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                flex-wrap: wrap;
             }
 
             img {
@@ -133,6 +149,7 @@ body {
             }
 
         }
+    }
 
 
     }

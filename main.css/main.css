@@ -123,40 +123,51 @@ body main h3 {
   margin: 115px auto;
   text-align: center; }
 
-@media (min-width: 600px) {
-  body main .card-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    text-align: center;
-    margin: 0; } }
+body main .card-container {
+  display: flex;
+  justify-content: space-evenly; }
+  @media (max-width: 599px) {
+    body main .card-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-content: center;
+      text-align: center;
+      margin: 0; } }
+  body main .card-container .card {
+    margin: 0px 5px 50px 5px; }
+    body main .card-container .card .card-img-top {
+      width: 285px;
+      height: 190px; }
 
-body main .card-container .card {
-  margin: 0px 5px 50px 5px; }
-  body main .card-container .card .card-img-top {
-    width: 285px;
-    height: 190px; }
-
-body main .media-object {
+body main .media-object-container .media-object {
   display: flex;
   align-items: flex-start;
   margin-bottom: 150px; }
+  @media (min-width: 600px) {
+    body main .media-object-container .media-object {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap; } }
   @media (max-width: 599px) {
-    body main .media-object {
-      flex-direction: column; } }
-  body main .media-object img {
+    body main .media-object-container .media-object {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap; } }
+  body main .media-object-container .media-object img {
     width: 400px;
     height: 300px; }
     @media (max-width: 599px) {
-      body main .media-object img {
+      body main .media-object-container .media-object img {
         margin: 0px 0px 15px 50px; } }
-  body main .media-object div {
+  body main .media-object-container .media-object div {
     height: 100%;
     width: 100%;
     text-align: center; }
-    body main .media-object div h2 {
+    body main .media-object-container .media-object div h2 {
       font-size: 3rem;
       margin-bottom: 30px; }
-    body main .media-object div p {
+    body main .media-object-container .media-object div p {
       font-size: 1.5rem; }
