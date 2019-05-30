@@ -10,6 +10,14 @@ font-family: Georgia, 'Times New Roman', Times, serif;
             text-align: center;
         }
 
+        .themes-lead{
+            text-align: center;
+
+            @include phone {
+                font-size: 1.5rem;
+            }
+        }
+
         .media-h3 {
             margin:75px auto;
         }
@@ -22,8 +30,20 @@ font-family: Georgia, 'Times New Roman', Times, serif;
                 justify-content: center;
                 align-items: center;
                 text-align: center;
+
+            }
+
+            @include tablet-portrait {
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
             }
             
+            p{
+                line-height: 1.5;
+                font-size: 1.3rem;
+            }
 
             
         }
