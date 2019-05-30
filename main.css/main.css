@@ -175,6 +175,9 @@ body {
   body main {
     text-align: center;
     margin: auto 25px; }
+    @media (max-width: 599px) {
+      body main {
+        margin: none; } }
     body main h3 {
       display: flex;
       font-size: 3rem;
@@ -241,7 +244,8 @@ body {
         height: 300px; }
         @media (max-width: 599px) {
           body main .media-object-container .media-object img {
-            margin: 0px 0px 15px 50px; } }
+            width: 90%;
+            height: 50vh; } }
       body main .media-object-container .media-object div {
         height: 100%;
         width: 100%;
@@ -262,6 +266,9 @@ body {
 
 .themes-main {
   font-family: Georgia, 'Times New Roman', Times, serif; }
+  @media (max-width: 599px) {
+    .themes-main {
+      margin: none; } }
   .themes-main ul {
     display: flex;
     flex-direction: column; }
@@ -291,6 +298,10 @@ body {
           justify-content: center;
           align-items: center;
           text-align: center; } }
+      @media (max-width: 599px) {
+        .themes-main ul li img {
+          width: 90%;
+          height: 50vh; } }
       .themes-main ul li p {
         line-height: 1.5;
         font-size: 1.3rem; }

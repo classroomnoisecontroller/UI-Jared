@@ -1,16 +1,22 @@
 //themes page styling
 .themes-main {
-font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+    @include phone {
+        margin: none;
+    }
+
     ul {
         display: flex;
         flex-direction: column;
+
         @include phone {
             justify-content: center;
             align-items: center;
             text-align: center;
         }
 
-        .themes-lead{
+        .themes-lead {
             text-align: center;
 
             @include phone {
@@ -19,12 +25,12 @@ font-family: Georgia, 'Times New Roman', Times, serif;
         }
 
         .media-h3 {
-            margin:75px auto;
+            margin: 75px auto;
         }
 
         li {
             display: flex;
-        
+
             @include phone {
                 flex-direction: column;
                 justify-content: center;
@@ -39,13 +45,20 @@ font-family: Georgia, 'Times New Roman', Times, serif;
                 align-items: center;
                 text-align: center;
             }
-            
-            p{
+
+            img {
+                @include phone {
+                    width: 90%;
+                    height: 50vh;
+                }
+            }
+
+            p {
                 line-height: 1.5;
                 font-size: 1.3rem;
             }
 
-            
+
         }
     }
 

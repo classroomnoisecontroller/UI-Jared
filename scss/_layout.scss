@@ -25,7 +25,7 @@ body {
             font-weight: 700;
             flex-shrink: 1;
             text-shadow: 3px 3px 0px #000;
-            
+
 
 
 
@@ -77,6 +77,10 @@ body {
     main {
         text-align: center;
         margin: auto 25px;
+
+        @include phone {
+            margin: none;
+        }
         h3 {
             display: flex;
             font-size: 3rem;
@@ -167,7 +171,9 @@ body {
                     height: 300px;
 
                     @include phone {
-                        margin: 0px 0px 15px 50px;
+                        // margin: 0px 0px 15px 50px;
+                        width: 90%;
+                        height: 50vh;
                     }
 
                 }
